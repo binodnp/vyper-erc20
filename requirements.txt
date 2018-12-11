@@ -1,0 +1,2 @@
+pycryptodome==3.7.2
+vyper==0.1.0b5
