@@ -1,5 +1,5 @@
 # Standard ERC20 token
-# Author: Binod Nirvan
+# Contributors: Binod Nirvan
 # This file is released under Apache 2.0 license.
 # http://www.apache.org/licenses/
 # Ported from Open Zeppelin 

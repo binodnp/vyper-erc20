@@ -1,5 +1,5 @@
 # ERC20 token with Ownable, Burnable, Mintable, and Transfer Lock features.
-# Author: Binod Nirvan
+# Contributors: Binod Nirvan
 # This file is released under Apache 2.0 license.
 # Burnable tokens are such tokens that can be irreversibly burned (destroyed).
 # Ported from Open Zeppelin
@@ -11,7 +11,6 @@
 # just as on Ethereum all the operations are done in wei.
 # 
 # See https://github.com/OpenZeppelin
-# Open Zeppelin tests ported: BurnableToken.behaviour.js, BurnableToken.test.js
 
 #OWNABLE
 OwnershipRenounced: event({_previousOwner: indexed(address)})

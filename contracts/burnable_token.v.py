@@ -1,5 +1,5 @@
 # Detailed ERC20 token with Burnable feature.
-# Author: Binod Nirvan
+# Contributors: Binod Nirvan
 # This file is released under Apache 2.0 license.
 # Burnable tokens are such tokens that can be irreversibly burned (destroyed).
 # Ported from Open Zeppelin
