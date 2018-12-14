@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CYBRToken/CYBRToken.git"
+    "url": "git+https://github.com/binodnp/vyper-erc20"
   },
   "keywords": [
     "vyper",
@@ -27,9 +27,9 @@
   "author": "Binod Nirvan",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/CYBRToken/CYBRToken/issues"
+    "url": "https://github.com/binodnp/vyper-erc20/issues"
   },
-  "homepage": "https://github.com/CYBRToken/CYBRToken#readme",
+  "homepage": "https://github.com/binodnp/vyper-erc20",
   "devDependencies": {
     "bignumber.js": "^7.2.1",
     "chai": "^4.2.0",
