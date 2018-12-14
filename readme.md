@@ -11,7 +11,7 @@ This project requires the the following dependencies to be present before you ca
 
 **Prerequisites**
 
-- Pthon3
+- Python3
 - NodeJS
 - Truffle
 - Ganache
@@ -56,7 +56,7 @@ source env/bin/activate
 
 **Restore NPM Packages**
 
-NPM is need to write and truffle tests (in JavaScript of course).
+NPM is needed to write and run truffle tests (in JavaScript of course).
 ```bash
 npm install
 ```
@@ -120,7 +120,14 @@ Detailed ERC20 token with Ownable, Cap, and Mintable features. Open Zeppelin tes
 
 Detailed ERC20 token with Ownable and Pausable feature. Open Zeppelin tests ported: PausableToken.test.js
 
+
+**token_timelock.v.py**
+
+TokenTimelock is a token holder contract that will allow a beneficiary to extract the tokens after a given release time.
+
+
 **lockable_token.v.py**
+
 ERC20 token with Ownable, Burnable, Mintable, and Transfer Lock features.
 
 
