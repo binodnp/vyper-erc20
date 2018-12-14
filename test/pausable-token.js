@@ -1,10 +1,14 @@
 const { assertRevert } = require('./helpers/assertRevert');
 const PausableToken = artifacts.require('./pausable_token.vyper');
+const { shouldBehaveLikeOwnable } = require('./ownable.behavior.js');
 
-contract('PausableToken', function ([_, owner, recipient, anotherAccount]) {
+contract('PausableToken', function ([_, owner, recipient, anotherAccount, a, b]) {
   beforeEach(async function () {
     this.token = await PausableToken.new(web3.fromAscii("Name"), web3.fromAscii("SYMBOL"), 100, 18, { from: owner });
+    this.ownable = this.token;
   });
+
+  shouldBehaveLikeOwnable([owner, recipient, anotherAccount, a, b]);
 
   describe('pause', function () {
     describe('when the sender is the token owner', function () {

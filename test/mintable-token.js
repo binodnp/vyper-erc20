@@ -2,15 +2,19 @@ const { ether } = require('./helpers/ether');
 const MintableToken = artifacts.require('./mintable_token.vyper');
 const { assertRevert } = require('./helpers/assertRevert');
 const BigNumber = web3.BigNumber;
+const { shouldBehaveLikeOwnable } = require('./ownable.behavior.js');
 
-contract('MintableToken', function ([owner, anotherAccount]) {
+contract('MintableToken', function ([owner, anotherAccount, a, b]) {
   const minter = owner;
   const cap = ether(1000);
   const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
   beforeEach(async function () {
     this.token = await MintableToken.new(web3.fromAscii("Name"), web3.fromAscii("SYMBOL"), 0, cap, 18, { from: owner });
+    this.ownable = this.token;
   });
+
+  shouldBehaveLikeOwnable([owner, anotherAccount, a, b]);
 
   describe('as a basic mintable token', function () {
     describe('after token creation', function () {

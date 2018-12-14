@@ -11,7 +11,7 @@
 # just as on Ethereum all the operations are done in wei.
 # 
 # See https://github.com/OpenZeppelin
-# Open Zeppelin tests ported: MintableToken.behaviour.js, MintableToken.test.js, CappedToken.behaviour.js, CappedToken.test.js
+# Open Zeppelin tests ported: MintableToken.behaviour.js, MintableToken.test.js, CappedToken.behaviour.js, CappedToken.test.js, Ownable.test.js, Ownable.behaviour.js
 
 #OWNABLE
 OwnershipRenounced: event({_previousOwner: indexed(address)})
