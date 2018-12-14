@@ -9,11 +9,11 @@ You will find several Vyper ERC20 contract implementations in this project. We'v
 
 This project requires the the following dependencies to be present before you can actually start developing and contributing to this repository.
 
-**Prerequisities:**
+**Prerequisites**
 
 - Pthon3
 - NodeJS
-- Truffle Test
+- Truffle
 - Ganache
 
 Since Vyper compiler is a beta software, there could be some breaking changes in the future. We, therefore, strongly encourage you to keep a close eye on [the official Vyper documentation](https://vyper.readthedocs.io/en/v0.1.0-beta.5/installing-vyper.html) if things go south.
@@ -134,3 +134,5 @@ Apache 2.0
 - [Vyper Documentation](https://vyper.readthedocs.io/en/v0.1.0-beta.5/installing-vyper.html)
 - [Truper Repository](https://github.com/maurelian/truper)
 - [Online Vyper Compiler](http://vyper.online/)
+- [Open Zeppelin Solidity](https://github.com/OpenZeppelin/openzeppelin-solidity)
+- [Truffle Suite of Tools](https://truffleframework.com)
