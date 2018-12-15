@@ -25,8 +25,8 @@ name: public(bytes32)
 symbol: public(bytes32)
 totalSupply: public(uint256)
 decimals: public(int128)
-balances: map(address, uint256)
-allowed: map(address, map(address, uint256))
+balances: public(map(address, uint256))
+allowed: public(map(address, map(address, uint256)))
 
 #ERC 20
 @public

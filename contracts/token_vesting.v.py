@@ -1,4 +1,4 @@
-# Token TokenVesting
+# TokenVesting
 # Contributors: Binod Nirvan
 # This file is released under Apache 2.0 license.
 # @dev A token holder contract that can release its token balance gradually like a
@@ -34,8 +34,8 @@ duration: public(timedelta)
 
 revocable: public(bool)
 
-released: map(address, uint256)
-revoked: map(address, bool)
+released: public(map(address, uint256))
+revoked: public(map(address, bool))
 
 
 #OWNABLE

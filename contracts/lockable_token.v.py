@@ -47,7 +47,7 @@ TokenReclaimed: event() #todo
 owner: public(address)
 
 #ADMIN
-admins: map(address, bool)
+admins: public(map(address, bool))
 
 #PAUSABLE
 paused: public(bool)
@@ -61,8 +61,8 @@ symbol: public(bytes32)
 totalSupply: public(uint256)
 maximumSupply: public(uint256)
 decimals: public(int128)
-balances: map(address, uint256)
-allowed: map(address, map(address, uint256))
+balances: public(map(address, uint256))
+allowed: public(map(address, map(address, uint256)))
 
 #MINTABLE
 mintingFinished: public(bool)

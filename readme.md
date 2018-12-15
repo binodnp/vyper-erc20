@@ -126,6 +126,13 @@ Detailed ERC20 token with Ownable and Pausable feature. Open Zeppelin tests port
 TokenTimelock is a token holder contract that will allow a beneficiary to extract the tokens after a given release time.
 
 
+**token_vesting.v.py**
+
+A token holder contract that can release its token balance gradually like a
+typical vesting scheme, with a cliff and vesting period. Optionally revocable by the
+owner.
+
+
 **lockable_token.v.py**
 
 ERC20 token with Ownable, Burnable, Mintable, and Transfer Lock features.
@@ -139,6 +146,8 @@ Apache 2.0
 **Additional Links**
 
 - [Vyper Documentation](https://vyper.readthedocs.io/en/v0.1.0-beta.5/installing-vyper.html)
+- [Vyper Crowdsale Contracts](http://github.com/binodnp/vyper-crowdsale)
+- [Vyper ERC721 Non Fungible Tokens](https://github.com/maurelian/erc721-vyper)
 - [Truper Repository](https://github.com/maurelian/truper)
 - [Online Vyper Compiler](http://vyper.online/)
 - [Open Zeppelin Solidity](https://github.com/OpenZeppelin/openzeppelin-solidity)
